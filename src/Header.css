@@ -1,0 +1,74 @@
+:root {
+    --header_background: #131921; 
+    --amazon_yellow: #cd9042;
+    --amazon_white: white;
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: var(--header_background);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header_logo {
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+}
+
+.header_search {
+    display: flex;
+    align-content: center;
+    border-radius: 24px;
+    flex: 1 1 auto
+}
+
+.header_searchInput {
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+
+.header_searchIcon {
+    background-color: var(--amazon_yellow);
+    height: 22px !important;
+    padding: 5px;
+}
+
+.header_options {
+  display: flex;
+  padding: .5rem;
+}
+
+.header_username {
+    padding: .5rem;
+    color: var(--amazon_white);
+}
+
+.header_orders {
+    padding: .5rem;
+    color: var(--amazon_white);
+}
+
+.header_cart {
+    padding: .5rem;
+    color: var(--amazon_white);
+    margin: auto;
+}
+
+
+.header_firstLine {
+ font-size: 13px;
+ margin: 0;
+}
+
+.header_secondLine {
+    font-size: 16px;
+    font-weight: 800;
+}
