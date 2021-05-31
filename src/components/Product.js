@@ -1,7 +1,26 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { StateContext } from '../context/StateContext';
 import '../Product.css';
+
 const Product = (props) => {
-    const {title, rating, price, imgSrc} = props;
+    const {id, title, rating, price, imgSrc} = props;
+
+    const [{basket}, dispatch] = useContext(StateContext);
+
+    console.log("Basket >",basket);
+    const addTobasket = () => {
+        dispatch({
+            type: 'ADD_TO_BASKET',
+            item: {
+                id: id,
+                title: title,
+                rating: rating,
+                price: price,
+                imgSrc: imgSrc
+            }
+        })
+    }
+
     let ratingStars= '';
     
     let ratingNo = parseInt(rating); 
@@ -26,7 +45,7 @@ const Product = (props) => {
             </div>
             <img src={imgSrc} alt="product1 img" className="product__image" />
             <div>
-                <button>Add to Cart</button>
+                <button onClick={addTobasket}>Add to Cart</button>
             </div>
         </div>
     )

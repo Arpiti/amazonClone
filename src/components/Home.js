@@ -17,24 +17,24 @@ const Home = () => {
             <div className="home__container">
                 <img className="home__image" src={url_backgrndHomeImage} alt="Home page" />
                 <div className="home__row">
-                    <Product title="Philips Beard Trimmer Cordless for Men QT4005/15 " price="999" rating="4" imgSrc={url_product1Image}/>
-                    <Product title="Mi 4X 138.8 cm (55 inch) Ultra HD (4K) LED Smart TV" price="26999" rating="3" imgSrc={url_product2Image} />
-                    <Product title="Valeria ArmChair in Provincial Teak Finish. Woodsworth is classic, part contemporary." price="11999" rating="5" imgSrc={url_product3Image}/>
+                    <Product id="1" title="Philips Beard Trimmer Cordless for Men QT4005/15 " price="999" rating="4" imgSrc={url_product1Image}/>
+                    <Product id="2" title="Mi 4X 138.8 cm (55 inch) Ultra HD (4K) LED Smart TV" price="26999" rating="3" imgSrc={url_product2Image} />
+                    <Product id="3" title="Valeria ArmChair in Provincial Teak Finish. Woodsworth is classic, part contemporary." price="11999" rating="5" imgSrc={url_product3Image}/>
                 </div>
                 <div className="home__row">
-                    <Product title="Buy LG 34 inch Curved 21:9 Ultrawide Gaming Monitor - 144Hz, 1ms, Full HD, IPS Panel with HDMI, Display Port, USB, Audio Out, Heaphone Ports - 34UC79G "
+                    <Product id="4" title="Buy LG 34 inch Curved 21:9 Ultrawide Gaming Monitor - 144Hz, 1ms, Full HD, IPS Panel with HDMI, Display Port, USB, Audio Out, Heaphone Ports - 34UC79G "
                     price="165000" rating="4" imgSrc={url_product4Image}/>
                 </div>
                 <div className="home__row">
-                    <Product title="PlayStation 5. Sony. Push the boundaries of play with the new generation of PlayStation® accessories."
+                    <Product id="5" title="PlayStation 5. Sony. Push the boundaries of play with the new generation of PlayStation® accessories."
                     price="49000" rating="5" imgSrc={url_product5Image}/>
-                    <Product title="CAPERLAN By Vera Moda - Men Black Solid Hooded Waterproof Leather Jacket"
+                    <Product id="6" title="CAPERLAN By Vera Moda - Men Black Solid Hooded Waterproof Leather Jacket"
                     price="16000" rating="4" imgSrc={url_product6Image}/>
                 </div>
                 <div className="home__row">
-                    <Product title="Philips Beard Trimmer Cordless for Men QT4005/15 " price="999" rating="4" imgSrc={url_product1Image}/>
-                    <Product title="Mi 4X 138.8 cm (55 inch) Ultra HD (4K) LED Smart TV" price="26999" rating="3" imgSrc={url_product2Image} />
-                    <Product title="Valeria ArmChair in Provincial Teak Finish. Woodsworth is classic, part contemporary." price="11999" rating="5" imgSrc={url_product3Image}/>
+                    <Product id="7" title="Philips Beard Trimmer Cordless for Men QT4005/15 " price="999" rating="4" imgSrc={url_product1Image}/>
+                    <Product id="8" title="Mi 4X 138.8 cm (55 inch) Ultra HD (4K) LED Smart TV" price="26999" rating="3" imgSrc={url_product2Image} />
+                    <Product id="9" title="Valeria ArmChair in Provincial Teak Finish. Woodsworth is classic, part contemporary." price="11999" rating="5" imgSrc={url_product3Image}/>
                 </div>
                 
             </div>
