@@ -2,14 +2,20 @@ import { Search, ShoppingCart } from '@material-ui/icons';
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { StateContext } from '../context/StateContext';
+import { auth } from '../firebase/config';
 import '../Header.css';
 
 const logo_url = "http://www.pngimg.com/uploads/amazon/amazon_PNG11.png";
-const cart_icon_url = "https://www.pngitem.com/pimgs/m/177-1771646_amazon-shopping-cart-icon-hd-png-download.png";
 
 const Header = () => {
 
-    const [{ basket }, dispatcher] = useContext(StateContext);
+    const [{ basket, user }, dispatcher] = useContext(StateContext);
+
+    const handleAuthentication = () => {
+        if(user){
+            auth.signOut();
+        }
+    }
 
     return (
         <div className='header'>
@@ -24,10 +30,10 @@ const Header = () => {
 
             <div className="header_options">
 
-                <Link to='/login'>
-                    <div className="header_username">
-                        <p className="header_firstLine">Hi Guest</p>
-                        <span className="header_secondLine">Sign in</span>
+                <Link to={!user && '/login'}>
+                    <div className="header_username" onClick={handleAuthentication}>
+                        <p className="header_firstLine">{user?`Hi ${user.email}`:"Hi Guest"}</p>
+                        <span className="header_secondLine">{user?"Sign Out":"Sign in"}</span>
                     </div>
                 </Link>
 

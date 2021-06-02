@@ -8,13 +8,13 @@ import CheckoutProduct from './CheckoutProduct';
 const url_imageAd = "https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/PrimeRewards/LP_Revamp/PC_Header_Banner._CB468631809_.jpg";
 
 const Checkout = () => {
-    
+    const [{user}] = useContext(StateContext);
     return (
         <div className="checkout">
 
             <div className="checkout__left">
                 <img src={url_imageAd} alt="amazon_ad" className="checkout__ad" />
-                <h2 className="checkout__title"> Your shopping basket </h2>
+                <h3 className="checkout__title"> Hello {user?.email}. Your shopping basket below </h3>
 
                 <CheckoutProduct/>
                 
@@ -26,6 +26,7 @@ const Checkout = () => {
             </div>
 
             <div className="checkout__right">
+            
                 <Subtotal />
             </div>
 

@@ -7,7 +7,6 @@ const Product = (props) => {
 
     const [{basket}, dispatch] = useContext(StateContext);
 
-    console.log("Basket >",basket);
     const addTobasket = () => {
         dispatch({
             type: 'ADD_TO_BASKET',
@@ -24,13 +23,11 @@ const Product = (props) => {
     let ratingStars= '';
     
     let ratingNo = parseInt(rating); 
-    console.log('rating >', rating);
     if(Number.isInteger(ratingNo))
     {
         for (let i=1;i<=ratingNo;i++)
         ratingStars=ratingStars+'🌟';
     }
-    console.log('ratingStars >', ratingStars);
     return (
         <div className="product">
             <div className="product__info">
