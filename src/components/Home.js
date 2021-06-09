@@ -4,10 +4,10 @@ import '../Home.css';
 ;
 const url_product1Image = "http://www.pngmart.com/files/15/Beard-Trimmer-Philips-PNG.png";
 const url_product2Image = "https://pngimage.net/wp-content/uploads/2019/05/smart-led-tv-png-3.png";
-const url_product3Image = "https://lh3.googleusercontent.com/proxy/SrghuhENU6XThyTy8k63DF7Gpry201leYyVbJD_x3_Ce6VMHtqDo2hXQt6pn8SiQKI2VBAOa3bRKSJjYLlA0DHQzWnt6Z6_AF53QPVxE8_AvX0LS3YiV9XoJN4z-5hZu5g";
+const url_product3Image = "https://www.pngplay.com/wp-content/uploads/2/Modern-Chair-Transparent-Images.png";
 const url_product4Image = "https://images.samsung.com/is/image/samsung/levant-c49hg90-lc49hg90dmmxzn-frontblack-76986739?$LazyLoad_Home_IMG$";
-const url_product5Image = "https://lh3.googleusercontent.com/proxy/j35nhnM0uHU2YdXMXf0a5wi8CEGAhYj57Z_-AlUifpn5jPUCS5gDD3G8d5SbGk40h6Hd49xDOIBix6DgJLzk7c88Ftt06BI4Ry4gyBDUKFAkNAC7AxI5gCfBG8xVrKM";
-const url_product6Image = "https://lh3.googleusercontent.com/proxy/dxr-aT7idI7qX75Nv4OKNYBm3-v7qNVO07jpakhjY7V-fcj6vO5dzn2WdsGadBv32b9CRjKeZSTnPG73ONgyRs1Kf0OElcHNavsSOAEMVHJk00AiD4hoEc7_tMvIJf5UuCv_XMfILg";
+const url_product5Image = "https://upload.wikimedia.org/wikipedia/commons/2/2e/Sony-PlayStation-2-30001-wController-L.png";
+const url_product6Image = "https://pngimg.com/uploads/leather_jacket/leather_jacket_PNG44.png";
 
 const url_backgrndHomeImage = "https://www.gdonews.it/wp-content/uploads/2020/03/ece.jpg";
 const Home = () => {
