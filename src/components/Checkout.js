@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import PropTypes from 'prop-types';
 import '../Checkout.css';
 import Subtotal from './Subtotal';
 import { StateContext } from '../context/StateContext';
